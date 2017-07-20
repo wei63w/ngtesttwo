@@ -12,10 +12,23 @@ declare var $:any;
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  navItemArr:Array<boolean>;
+
+  constructor() { 
+
+    this.navItemArr = [true,false,false,false,false];
+  }
 
   ngOnInit() {
     // $('#dv').css('border','1px solid red');
+  }
+
+  /**
+   * Nav-Touch-Change-Style
+   */
+  public navChange(id:number) {
+    this.navItemArr = this.navItemArr.map( item => item = false);
+    this.navItemArr[id] = true;
   }
 
 }

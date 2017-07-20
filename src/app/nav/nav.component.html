@@ -14,11 +14,11 @@
             </div>
             <div class="collapse navbar-collapse" id="collapseDiv">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a [routerLink]="['/main/animate']">Animation</a></li>
-                    <li><a [routerLink]="['/main/jquery']">Jquery</a></li>
-                    <li><a href="#">Third</a></li>
-                    <li><a href="#">Fourth</a></li>
-                    <li><a href="#">Fiveth</a></li>
+                    <li [ngClass]="{'active':navItemArr[0]}" (click)="navChange(0)"><a [routerLink]="['/main/animate']">Animation</a></li>
+                    <li [ngClass]="{'active':navItemArr[1]}" (click)="navChange(1)"><a [routerLink]="['/main/jquery']">Jquery</a></li>
+                    <li [ngClass]="{'active':navItemArr[2]}" (click)="navChange(2)"><a href="#">Third</a></li>
+                    <li [ngClass]="{'active':navItemArr[3]}" (click)="navChange(3)"><a href="#">Fourth</a></li>
+                    <li [ngClass]="{'active':navItemArr[4]}" (click)="navChange(4)"><a href="#">Fiveth</a></li>
                 </ul>
             </div>
         </div>
