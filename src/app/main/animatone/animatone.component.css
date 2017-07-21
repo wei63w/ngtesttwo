@@ -1,0 +1,22 @@
+/* .firstanimat:hover {
+    background-color: blue !important;
+} */
+
+@keyframes first {
+    from {
+        background-color: red
+    }
+    to {
+        background-color: blue
+    }
+}
+
+.firstanimat :hover {
+    animation: first 5s infinite;
+    -moz-animation: myfirst 5s infinite;
+    /* Firefox */
+    -webkit-animation: myfirst 5s;
+    /* Safari and Chrome */
+    -o-animation: myfirst 5s;
+    /* Opera */
+}
